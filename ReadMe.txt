@@ -56,3 +56,11 @@ localhost:8081/logger
 Check health
 localhost:8080/actuator/health
 localhost:8081/actuator/health
+
+Docker
+Main Directory Build using command:
+docker build . -t default_base
+Build Product Service
+docker build . -t productservice
+Build Logger Service
+docker build . -t loggerservice
