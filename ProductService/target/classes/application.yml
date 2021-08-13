@@ -1,0 +1,17 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 9010
+spring:
+  application:
+    name: productservice
+  datasource:
+    url:  jdbc:mysql://${MYSQL_URL:localhost:3306}/${MYSQL_DB:productdb}
+    username: ${MYSQL_USER:productservice}
+    password: ${MYSQL_PASS:ThePassword}
+  jpa:
+    hibernate:
+      ddl-auto: update
